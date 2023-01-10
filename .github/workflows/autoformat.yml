@@ -4,7 +4,9 @@ on: # rebuild any PRs and master branch changes
     push:
         branches:
             - main
-            
+permissions:
+    contents: write
+    
 jobs:
   reformat-sql:
     runs-on: ubuntu-latest
